@@ -8,4 +8,3 @@ export MONGODB_URI='mongodb://heroku_6067zh26:t03nov0icae8k5e0pvh92m70d1@ds13726
 export PARSE_MOUNT='parse'
 export REMOTE_SERVER_URL='http://snowflake-parse.herokuapp.com/parse'
 export SERVER_URL='http://localhost:1337/parse'
-

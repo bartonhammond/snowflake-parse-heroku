@@ -1,11 +1,11 @@
 {
-  "name": "parse-server-example",
-  "version": "1.4.0",
-  "description": "An example Parse API server using the parse-server module",
+  "name": "snowflake-parse-heroku",
+  "version": "0.0.1",
+  "description": "Parse API server using the parse-server module for Snowflake",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ParsePlatform/parse-server-example"
+    "url": "https://github.com/bartonhammond/snowflake-parse-heroku"
   },
   "license": "MIT",
   "dependencies": {
