@@ -30,4 +30,4 @@ node_modules
 *~
 
 # Environment variables
-setenv-copy
+setenv
