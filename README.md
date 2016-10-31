@@ -113,9 +113,9 @@ https://api.mailgun.net/v3/samples.mailgun.org/messages \
 	
 #### Deploy parse-server locally
 * Configure the same set of environment variables in the terminal
-* Copy the `./setenv-copy` to `./setenv`
-* Edit the environment varaiables in the `./setenv` file
-* Then source it: `source ./setenv`.
+* Copy the `./setenv-example` to `./setenv`
+* Edit the environment variables in the `./setenv` file
+* When you run `npm start`, the `./setenv` file is sourced
 
 ```
   export APP_ID= "<same as above>"
@@ -129,7 +129,6 @@ https://api.mailgun.net/v3/samples.mailgun.org/messages \
   export SERVER_URL="http://localhost:1337/parse"
 ```
 	
-* You'll need to relaunch MacOS terminal to set the new environment variables
 * Type `npm install` from your `parse-server-example` project directory
 * Type `npm start` to start `parse-server`
 

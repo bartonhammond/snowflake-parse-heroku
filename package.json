@@ -15,7 +15,7 @@
     "parse-server": "*"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "source ./setenv && node index.js"
   },
   "engines": {
     "node": ">=4.3"

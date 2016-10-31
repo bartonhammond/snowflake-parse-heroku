@@ -11,6 +11,14 @@ if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
 }
 
+console.log('databaseUri',databaseUri || 'mongodb://localhost:27017/dev');
+console.log('appId', process.env.APP_ID || 'myAppId');
+console.log('masterKey',process.env.MASTER_KEY || '');
+console.log('serverURL',process.env.SERVER_URL || 'http://localhost:1337/parse');
+console.log('publicServerURL',process.env.SERVER_URL || 'http://localhost:1337/parse');
+console.log('appName', process.env.APP_NAME ||'My App Name');
+
+
 var api = new ParseServer({
   databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
@@ -60,7 +68,7 @@ app.get('/test', function(req, res) {
 var port = process.env.PORT || 1337;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, function() {
-    console.log('parse-server-example running on port ' + port + '.');
+    console.log('snowflake-parse-heroku running on port ' + port + '.');
 });
 
 // This will enable the Live Query real-time server
