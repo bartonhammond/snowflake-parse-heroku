@@ -114,6 +114,7 @@ https://api.mailgun.net/v3/samples.mailgun.org/messages \
 #### Deploy parse-server locally
 * Configure the same set of environment variables in the terminal
 * Copy the `./setenv-example` to `./setenv`
+* Within your terminal where you will start the server, first do `source ./setenv` which will setup the environment properly
 * Edit the environment variables in the `./setenv` file
 * When you run `npm start`, the `./setenv` file is sourced
 
